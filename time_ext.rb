@@ -4,6 +4,7 @@ class Time
     seconds, minutes, hours, *everything_else = getutc.to_a
     (((hours + 1) * 3600 + (minutes * 60) + seconds) / 86.4).to_i
   end
+  alias to_internet_time to_beats
   
   def is_beer_oclock?
     true
