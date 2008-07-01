@@ -32,4 +32,10 @@ class Time
   def is_it_christmas?
     (self.month == 12) && (self.day == 25)
   end
+  
+  # 3pm is my coffee cut-off point every day
+  def coffee?(cutoff_hour = 15)
+    self.hour < cutoff_hour
+  end
+  
 end
