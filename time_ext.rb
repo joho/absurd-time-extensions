@@ -36,4 +36,11 @@ class Time
   def sleeps_until_christmas
     Time.local(self.year, 12, 25).yday - self.yday
   end
+  
+  # 3pm is my coffee cut-off point every day
+  def coffee?(cutoff_hour = 15)
+    self.hour < cutoff_hour
+  end
+  
 end
+
