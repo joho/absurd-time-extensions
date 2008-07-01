@@ -28,4 +28,8 @@ class Time
   def eighty_eight_miles_per_hour
     Time.utc(1955, 11, 5)
   end
+  
+  def is_it_christmas?
+    (self.month == 12) && (self.day == 25)
+  end
 end
