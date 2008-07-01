@@ -19,4 +19,9 @@ class Time
       "Hammertime!"
     end
   end
+  
+  def is_skynet_self_aware?
+    # i am assuming as skynet is pretty clever, it's on UTC
+    self > Time.utc(1997, 8, 29, 2, 14)
+  end
 end
