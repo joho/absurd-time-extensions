@@ -32,4 +32,8 @@ class Time
   def is_it_christmas?
     (self.month == 12) && (self.day == 25)
   end
+
+  def sleeps_until_christmas
+    Time.local(self.year, 12, 25).yday - self.yday
+  end
 end
