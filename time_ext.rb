@@ -24,4 +24,8 @@ class Time
     # i am assuming as skynet is pretty clever, it's on UTC
     self > Time.utc(1997, 8, 29, 2, 14)
   end
+
+  def eighty_eight_miles_per_hour
+    Time.utc(1955, 11, 5)
+  end
 end
