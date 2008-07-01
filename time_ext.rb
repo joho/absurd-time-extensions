@@ -19,5 +19,3 @@ class Time
     end
   end
 end
-
-puts Time.now.to_beats
