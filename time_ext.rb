@@ -19,4 +19,8 @@ class Time
       "Hammertime!"
     end
   end
+
+  def eighty_eight_miles_per_hour
+    Time.utc(1955, 11, 5)
+  end
 end
