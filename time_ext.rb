@@ -1,7 +1,7 @@
 class Time
   # stupid swatch and their dotcom boom digital wristwatches
   def to_beats
-    seconds, minutes, hours, *everything_else = getutc.to_a
+    seconds, minutes, hours = getutc.to_a
     (((hours + 1) * 3600 + (minutes * 60) + seconds) / 86.4).to_i
   end
   alias to_internet_time to_beats
